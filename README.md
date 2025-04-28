@@ -1,11 +1,30 @@
 # Proyecto API con Node.js y Sequelize
 
-Este proyecto implementa un CRUD completo de usuarios utilizando Node.js, Express y Sequelize, y documenta la base de datos con un diagrama ER.
+Una pequeña REST API para gestionar usuarios con Node.js, Express y Sequelize (MySQL).
 
-## Instalación
+## 📦 Tecnologías
+
+- Node.js v16+
+- Express
+- Sequelize CLI
+- MySQL
+- Curl para pruebas
+
+## 🚀 Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Alejandrocantu11/proyecto-api.git
+   cd proyecto-api
+
+## 🌐 Ejemplo de petición y respuesta
+
+Puedes crear un usuario con:
 
 ```bash
-git clone <tu-repo-url>
-cd proyecto-api
-npm install
-npx sequelize-cli db:migrate
+curl -X POST "http://localhost:3000/api/users" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Ana\",\"email\":\"ana@correo.com\",\"password\":\"1234\"}"```
+
+
+   ![Ejemplo de curl](docs/curl-example.png)

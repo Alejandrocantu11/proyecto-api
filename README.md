@@ -24,7 +24,7 @@ Puedes crear un usuario con:
 ```bash
 curl -X POST "http://localhost:3000/api/users" \
   -H "Content-Type: application/json" \
-  -d "{\"name\":\"Ana\",\"email\":\"ana@correo.com\",\"password\":\"1234\"}"```
-
+  -d "{\"name\":\"Ana\",\"email\":\"ana@correo.com\",\"password\":\"1234\"}"
+```
 
    ![Ejemplo de curl](docs/curl-example.png)

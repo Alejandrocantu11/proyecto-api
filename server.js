@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
 });
 
 // Inicia el servidor
+const notesRouter = require('./routes/notes');
+app.use('/api/notes', notesRouter);
+
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
